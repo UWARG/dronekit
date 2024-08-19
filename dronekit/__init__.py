@@ -33,7 +33,6 @@ A number of other useful classes and methods are listed below.
 """
 
 import sys
-import collections
 
 # Python3.10 removed MutableMapping from collections:
 if sys.version_info.major == 3 and sys.version_info.minor >= 10:
@@ -53,7 +52,7 @@ from past.builtins import basestring
 from pymavlink import mavutil, mavwp
 from pymavlink.dialects.v10 import ardupilotmega
 
-from dronekit.util import ErrprinterHandler
+from .util import ErrprinterHandler
 
 
 class APIException(Exception):
@@ -3196,7 +3195,7 @@ def connect(ip,
     :returns: A connected vehicle of the type defined in ``vehicle_class`` (a superclass of :py:class:`Vehicle`).
     """
 
-    from dronekit.mavlink import MAVConnection
+    from .mavlink import MAVConnection
 
     if not vehicle_class:
         vehicle_class = Vehicle

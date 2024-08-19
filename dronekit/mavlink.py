@@ -8,7 +8,7 @@ import sys
 import os
 import platform
 import copy
-from dronekit import APIException
+from . import APIException
 from pymavlink import mavutil
 from queue import Queue, Empty
 from threading import Thread

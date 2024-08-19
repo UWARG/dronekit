@@ -1,12 +1,10 @@
-.project
-.pydevproject
-.python-version
-dronekit.egg-info
-dist
-build
-.vagrant
-*~
-.idea
-*.pyc
-env
-vs/.vs/dronekit-python/v14/*.suo
+# IDEs
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+venv/
+
+# Logging
+logs/
